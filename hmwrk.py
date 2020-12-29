@@ -36,7 +36,7 @@ def add_coefficient(exp1, coeff1, exp2, coeff2):
     for exponent in combined_exp_list: #Big(O)-O(1)     T(n)=c*n
         combined_coeff_list.append(exponent_coefficient_dict.get(exponent, 0))
 
-    #Polinomların toplamının yazdırılmasını sağlayan fonksiyon.
+    #Polinomların toplamının yazdırılmasını sağlayan işlem.
     for i in range(len(combined_coeff_list)):   #Big(O)-O(N)
       print(combined_coeff_list[i], end = "")   #Zamansal Karmaşıklık:(c2+c3) + (c0 + c1)*n
       print("x^",combined_exp_list[i], end = "")
@@ -67,7 +67,7 @@ def dif_coefficient(exp1, coeff1, exp2, coeff2):
     for exponent in combined_exp_list:       #Big(O)-O(1)    T(n)=c*n
         combined_coeff_list.append(exponent_coefficient_dict.get(exponent, 0))
 
-    #Polinomların farkının yazdırılmasını sağlayan fonksiyon.
+    #Polinomların farkının yazdırılmasını sağlayan işlem.
     for i in range(len(combined_coeff_list)):     #Big(O)-O(N)
       print(combined_coeff_list[i], end = "")     #Zamansal Karmaşıklık:(c2+c3) + (c0 + c1)*n
       print("x^",combined_exp_list[i], end = "")
