@@ -9,11 +9,11 @@ def printPoly(poly, n):
 		if (i != n - 1):     
 			print(" + ", end = "")   
 
-def printPoly1(poly, n):               
-	for i in range(n):            
+def printPoly1(poly, t):               
+	for i in range(t):            
 		print(poly[i], end = "")             #Zamansal Karmaşıklık:c2 + (c0 + c1)*n
 		print("x^", exp_2[i], end = "") 
-		if (i != n - 1):      
+		if (i != t - 1):      
 			print(" + ", end = "")
   
 #Polinomların toplama işlemi için gerekli fonksiyon.           
